@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Encanto Natural - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="imagens/logo-da-empresa.png" alt="Logo da Floricultura Encanto Natural">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li class="active"><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre a Aluna</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo -->
+    <main>
+        <h2 class="titulo-pagina">Entre em Contato Conosco</h2>
+
+        <!-- Formulário de Contato -->
+        <div class="formulario-contato">
+            <form method="post">
+                <div class="input-label">Nome:</div>
+                <input type="text" id="nome" name="nome" required>
+
+                <div for="email" class="input-label">E-mail:</div>
+                <input type="email" id="email" name="email" required>
+
+                <div for="mensagem" class="input-label">Mensagem:</div>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <br>
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+
+        <!-- Mapa do Google incorporado -->
+        <div class="contato-mapa">
+            <iframe
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30605.48261696419!2d-38.49020915091234!3d-12.97159896414072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71605df405979c3%3A0x82f52b9c93472b8a!2sSalvador%2C%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1633121553525!5m2!1spt-BR!2sbr"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Floricultura Encanto Natural</p>
+    </footer>
+</body>
+</html>

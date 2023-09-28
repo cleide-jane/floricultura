@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Encanto Natural - Trabalhe Conosco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo-da-empresa.png" alt="Logo da Floricultura Encanto Natural">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="active"><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre a Aluna</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titulo-pagina">Trabalhe Conosco</h2>
+        <p class="align-center">Estamos sempre em busca de talentos. Preencha o formulário abaixo para se candidatar.</p> 
+
+        <div class="formulario-trabalhe-conosco">
+            <form method="post">
+                <div class="input-label">Nome:</div>
+                <input type="text" id="nome" name="nome" required>
+    
+                <div class="input-label">E-mail:</div>
+                <input type="email" id="email" name="email" required>
+    
+                <div class="input-label">Telefone:</div>
+                <input type="tel" id="telefone" name="telefone" required>
+    
+                <div class="input-label">Mensagem (opcional):</div>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                
+                <br>
+                <input type="submit" value="Enviar Candidatura">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Floricultura Encanto Natural</p>
+    </footer>
+</body>
+</html>

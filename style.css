@@ -1,0 +1,144 @@
+html {
+    color: #333;
+}
+
+.align-center {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* CSS para o menu horizontal centralizado */
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: goldenrod;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Alinha o menu horizontal no centro da página */
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li:hover, .active {
+    text-decoration: underline !important;
+    background-color: rgba(255, 255, 255, 0.151);
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item do menu */
+}
+
+/* Estilo para os links do menu */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center; 
+    background-color: goldenrod;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+}
+
+.formulario-contato {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-label {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contato-mapa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formulario-trabalhe-conosco {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.paragrafo-sobre {
+    width: 600px;
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.main-produto {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro da tela */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro da tela */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 4 colunas iguais */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.produto {
+    text-align: center; /* Centraliza o conteúdo dentro de cada célula da grade */
+}
+
+.produto img {
+    width: 250px;
+    height: auto;
+    max-height: 250px; /* Limita a altura para manter a proporção */
+    border: 1px solid #ccc; /* Borda ao redor das imagens */
+    border-radius: 5px; /* Cantos arredondados para as imagens */
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.preco {
+    font-weight: bold;
+    color: #e74c3c; /* Cor do preço */
+}
+
+.foto-aluna {
+    text-align: center;
+    background-image: url('imagens/cleide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 50%;
+}
