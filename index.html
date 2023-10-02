@@ -4,89 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floricultura Encanto Natural</title>
+    <link rel="icon" type="image/png" href="imagens/logo-da-empresa.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <img src="imagens/logo-da-empresa.png" alt="Logo da Floricultura Encanto Natural">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobre.html">Sobre a Aluna</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Corpo -->
-    <main>
-        <h1 class="titulo-pagina">Produtos em Destaque</h1>
-        <div class="main-produto">
-            <section class="produtos">
-                <div class="produto">
-                    <img src="imagens/lirio01.jpg" alt="lirio">
-                    <h3>Lírio da Paz</h3>
-                    <p>Os lírios são flores majestosas e elegantes, disponíveis em várias cores, 
-                        sendo o lírio branco um símbolo de pureza. 
-                        São frequentemente usados em arranjos de casamento e expressam beleza e refinamento.</p>
-                    <p class="preco">Preço: R$ 69,90</p>
-                </div>
-
-                <div class="produto">
-                    <img src="imagens/rosa01.jpg" alt="rosa">
-                    <h3>Rosa Vermelha</h3>
-                    <p>As rosas são clássicas e apaixonamtes , simbolizando o amor e a paixão. 
-                        Disponíveis em uma variedade de cores, cada uma com seu próprio significado, 
-                        as rosas são as flores ideais para expressar sentimentos profundos.</p>
-                    <p class="preco">Preço: R$ 69,90</p>
-                </div>
-
-                <div class="produto">
-                    <img src="imagens/girassol01.jpg" alt="girassol">
-                    <h3>Girassol</h3>
-                    <p>Os girassóis são conhecidos por seguir o movimento do sol, 
-                        sempre virando-se em direção à luz. 
-                        Suas flores amarelas vibrantes simbolizam a alegria e a energia positiva. 
-                        São excelentes para transmitir sentimentos de otimismo e amizade.</p>
-                    <p class="preco">Preço: R$ 69,90</p>
-                </div>
-
-                <div class="produto">
-                    <img src="imagens/clivia01.jpg" alt="clivia">
-                    <h3>Clivia</h3>
-                    <p>A clívia é uma planta de interior elegante e única, conhecida por suas flores alaranjadas e folhagem exuberante. 
-                        É perfeita para trazer um toque de natureza à sua casa ou escritório e prospera em ambientes com pouca luz.</p>
-                    <p class="preco">Preço: R$ 49,90</p>
-                </div>
-
-                <div class="produto">
-                    <img src="imagens/rosa do deserto01.jpg" alt="rosa do deserto">
-                    <h3>Rosa do Deserto</h3>
-                    <p>A rosa do deserto, também conhecida como adenium, 
-                        é uma planta única com caudex inchado e flores exuberantes. 
-                        Ela adiciona um toque de exotismo e beleza a qualquer coleção de plantas. 
-                        Suas flores podem ser encontradas em várias cores.</p>
-                    <p class="preco">Preço: R$ 39,90</p>
-                </div>
-
-                <div class="produto">
-                    <img src="imagens/gerbera01.jpg" alt="gerbera">
-                    <h3>Gerbera</h3>
-                    <p>As gerberas são flores alegres com pétalas grandes e vibrantes em tons de rosa, laranja, vermelho e amarelo.
-                        Elas representam a inocência e a pureza e são uma opção popular para presentear alguém querido. .</p>
-                    <p class="preco">Preço: R$ 19,90</p>
-                </div>
-                
-            </section>
+    
+    <div class="row header">
+        <div class="col text-center">
+            <img src="imagens/logo-da-empresa.png" class="img-fluid" alt="Logo da Floricultura Encanto Natural">
         </div>
-    </main>
+    </div>
+    <div class="row d-md-block d-none">
+        <div class="col text-center">
+            <nav class="navbar navbar-expand-lg bg-body-danger justify-content-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="sobre.html">Sobre a Aluna</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <nav class="navbar bg-body-danger fixed-top d-sm-none d-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre a Aluna</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Corpo -->
+        <main>
+            <h1 class="titulo-pagina">Produtos em Destaque</h1>
+            <div class="main-produto">
+                <section class="produtos">
+                    <div class="row align-items-center">
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/lirio.html">
+                                <div class="produto">
+                                    <img src="imagens/lirio01.jpg" class="img-fluid" alt="lirio">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Lírio da Paz</h3>
+                                    <p>Os lírios são flores majestosas e elegantes, disponíveis em várias cores, 
+                                        sendo o lírio branco um símbolo de pureza. 
+                                        São frequentemente usados em arranjos de casamento e expressam beleza e refinamento.</p>
+                                    <p class="preco">Preço: R$ 69,90</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/rosa.html">
+                                <div class="produto">
+                                    <img src="imagens/rosa01.jpg" class="img-fluid" alt="rosa">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Rosa Vermelha</h3>
+                                    <p>As rosas são clássicas e apaixonamtes , simbolizando o amor e a paixão. 
+                                        Disponíveis em uma variedade de cores, cada uma com seu próprio significado, 
+                                        as rosas são as flores ideais para expressar sentimentos profundos.</p>
+                                    <p class="preco">Preço: R$ 69,90</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/girassol.html">
+                                <div class="produto">
+                                    <img src="imagens/girassol01.jpg" class="img-fluid" alt="girassol">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Girassol</h3>
+                                    <p>Os girassóis são conhecidos por seguir o movimento do sol, 
+                                        sempre virando-se em direção à luz. 
+                                        Suas flores amarelas vibrantes simbolizam a alegria e a energia positiva. 
+                                        São excelentes para transmitir sentimentos de otimismo e amizade.</p>
+                                    <p class="preco">Preço: R$ 69,90</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/clivia.html">
+                                <div class="produto">
+                                    <img src="imagens/clivia01.jpg" alt="clivia">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Clivia</h3>
+                                    <p>A clívia é uma planta de interior elegante e única, conhecida por suas flores alaranjadas e folhagem exuberante. 
+                                        É perfeita para trazer um toque de natureza à sua casa ou escritório e prospera em ambientes com pouca luz.</p>
+                                    <p class="preco">Preço: R$ 49,90</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/rosa do deserto.html">
+                                <div class="produto">
+                                    <img src="imagens/rosa do deserto01.jpg" alt="rosa do deserto">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Rosa do Deserto</h3>
+                                    <p>A rosa do deserto, também conhecida como adenium, 
+                                        é uma planta única com caudex inchado e flores exuberantes. 
+                                        Ela adiciona um toque de exotismo e beleza a qualquer coleção de plantas. 
+                                        Suas flores podem ser encontradas em várias cores.</p>
+                                    <p class="preco">Preço: R$ 39,90</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-md-4">
+                            <a href="detalhes/gerbera.html">
+                                <div class="produto">
+                                    <img src="imagens/gerbera01.jpg" alt="gerbera">
+                                    <br><small>Fonte da Image: Freepik</small>
+                                    <h3>Gerbera</h3>
+                                    <p>As gerberas são flores alegres com pétalas grandes e vibrantes em tons de rosa, laranja, vermelho e amarelo.
+                                        Elas representam a inocência e a pureza e são uma opção popular para presentear alguém querido. .</p>
+                                    <p class="preco">Preço: R$ 19,90</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
 
     <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2023 Floricultura Encanto Natural</p>
-    </footer>
+    <div class="row">
+        <div class="col text-center">
+            <footer class="p-3">
+                &copy; 2023 Floricultura Encanto Natural
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

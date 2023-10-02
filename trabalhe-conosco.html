@@ -4,47 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floricultura Encanto Natural - Trabalhe Conosco</title>
+    <link rel="icon" type="image/png" href="imagens/logo-da-empresa.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/logo-da-empresa.png" alt="Logo da Floricultura Encanto Natural">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li class="active"><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobre.html">Sobre a Aluna</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2 class="titulo-pagina">Trabalhe Conosco</h2>
-        <p class="align-center">Estamos sempre em busca de talentos. Preencha o formulário abaixo para se candidatar.</p> 
-
-        <div class="formulario-trabalhe-conosco">
-            <form method="post">
-                <div class="input-label">Nome:</div>
-                <input type="text" id="nome" name="nome" required>
-    
-                <div class="input-label">E-mail:</div>
-                <input type="email" id="email" name="email" required>
-    
-                <div class="input-label">Telefone:</div>
-                <input type="tel" id="telefone" name="telefone" required>
-    
-                <div class="input-label">Mensagem (opcional):</div>
-                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-                
-                <br>
-                <input type="submit" value="Enviar Candidatura">
-            </form>
+    <div class="row header">
+        <div class="col text-center">
+            <img src="imagens/logo-da-empresa.png" class="img-fluid" alt="Logo da Floricultura Encanto Natural">
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Floricultura Encanto Natural</p>
-    </footer>
+    </div>
+    <div class="row d-md-block d-none">
+        <div class="col text-center">
+            <nav class="navbar navbar-expand-lg bg-body-danger justify-content-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="sobre.html">Sobre a Aluna</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <nav class="navbar bg-body-danger fixed-top d-sm-none d-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre a Aluna</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <main>
+            <h2 class="titulo-pagina">Trabalhe Conosco</h2>
+            <p class="align-center">Estamos sempre em busca de talentos. Preencha o formulário abaixo para se candidatar.</p> 
+
+            <div class="formulario-trabalhe-conosco">
+                <form method="post">
+                    <div class="input-label">Nome:</div>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+        
+                    <div class="input-label">E-mail:</div>
+                    <input type="email" id="email" name="email" class="form-control" required>
+        
+                    <div class="input-label">Telefone:</div>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" required>
+        
+                    <div class="input-label">Mensagem (opcional):</div>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="4"></textarea>
+                    
+                    <br>
+                    <input type="submit" value="Enviar Candidatura">
+                </form>
+            </div>
+        </main>
+    
+    </div>
+
+    <!-- Rodapé -->
+    <div class="row">
+        <div class="col text-center">
+            <footer class="p-3">
+                &copy; 2023 Floricultura Encanto Natural
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

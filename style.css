@@ -1,22 +1,27 @@
-html {
-    color: #333;
+html, body {
+    color: #333 !important;
+    background-image: url("imagens/background.png") !important;
+    background-repeat: repeat !important;
 }
 
 .align-center {
     text-align: center;
 }
 
-header {
-    background-color: #333;
+.header {
     padding-top: 10px;
     text-align: center;
+}
+
+.header img {
+    width: 330px;
 }
 
 /* CSS para o menu horizontal centralizado */
 nav {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: goldenrod;
+    background-color: lightpink;
 }
 
 nav ul {
@@ -50,7 +55,7 @@ nav ul li a {
 
 footer {
     text-align: center; 
-    background-color: goldenrod;
+    background-color: lightpink;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -81,35 +86,18 @@ footer {
     text-align: center;
 }
 
-.paragrafo-sobre {
-    width: 600px;
-    display: inline-block;
-    text-align: justify;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.main-produto {
-    display: flex;
-    justify-content: center; /* Alinha o conteúdo horizontalmente no centro da tela */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro da tela */
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.produtos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 4 colunas iguais */
-    gap: 20px; /* Espaçamento entre os produtos */
-    padding: 20px; /* Espaçamento interno */
+.produtos a {
+    text-decoration: none;
+    color: #333;
 }
 
 .produto {
-    text-align: center; /* Centraliza o conteúdo dentro de cada célula da grade */
+    text-align: center !important;
+    padding: 14px;
 }
 
 .produto img {
-    width: 250px;
+    max-width: 250px;
     height: auto;
     max-height: 250px; /* Limita a altura para manter a proporção */
     border: 1px solid #ccc; /* Borda ao redor das imagens */
@@ -141,4 +129,24 @@ footer {
     height: 300px;
     display: inline-block;
     border-radius: 50%;
+}
+
+.redes-sociais {
+    margin-bottom: 26px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.redes-sociais a img {
+    max-width: 36px;
+}
+
+.carousel-item img {
+    max-height: 600px !important;
+    min-height: 250px !important;
+    height: 350px !important;
 }
